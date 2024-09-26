@@ -1,0 +1,91 @@
+body {
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+}
+
+.sideBar {
+    color: antiquewhite;
+    width: 19%;
+    height: 100vh;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+
+    background-image: url(/img/gif.gif);
+    background-repeat: round;
+    background-size: cover;
+}
+
+.sideBar button {
+    width: 50%;
+    background-color: transparent;
+    border: transparent;
+    color: antiquewhite;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 25px;
+    text-align: justify;
+    margin-left: 2rem;
+}
+
+.sideBar button:hover {
+    font-size: 35px;
+    border-bottom: 1px solid antiquewhite;
+}
+
+.sideBar:hover {
+    width: 27%;
+    transition: 10ms;
+}
+
+.conteudo {
+    padding: 1rem;
+    width: 100%;
+    margin-left: 20%;
+    text-align: justify;
+    position: relative;
+}
+
+.conteudo img {
+    width: 100%;
+    border-radius: 20px;
+
+}
+
+a {
+    color: antiquewhite;
+    text-decoration: none;
+}
+
+.imagens_row {
+    display: grid;
+
+    grid-template-columns: repeat(3, 2fr);
+    gap: 10px;
+}
+
+.imagens_row img:hover {
+    box-shadow: 5px 5px 10px rgba(212, 8, 8, 0.5);
+}
+
+
+.texto{
+    position: relative;
+    margin-top: -215px;
+    border-radius: 15px;
+    padding: 1rem;
+    text-align: justify;
+    transition: all .5s ease-in-out;
+    visibility: hidden;
+    color: antiquewhite;
+}
+
+
+.content:nth-child(2):hover .texto{
+    visibility: visible;
+    background: rgba(0, 0, 0, 0.9);
+}
