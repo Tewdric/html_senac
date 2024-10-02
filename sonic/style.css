@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+    background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmaA-an41NBuRmrT3iekvdeMOGnfXGVkmO6Q&s) no-repeat center;
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+}
+
+.container{
+    display: block;
+    position: relative;
+}
+
+img{
+   position: absolute;
+   bottom: 12%;
+    width: 10%;
+    height: 10%;
+    animation: correndo 1s ease-out infinite;
+    background: none;
+}
+
+
+@keyframes correndo{
+    from{
+        left: 0;
+    }
+    to{
+        left: 100%;
+    }
+}

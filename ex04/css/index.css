@@ -16,7 +16,7 @@ body {
     flex-direction: column;
     position: fixed;
 
-    background-image: url(/img/gif.gif);
+    background-image: url(/ex04/img/gif.gif);
     background-repeat: round;
     background-size: cover;
 }
@@ -35,6 +35,7 @@ body {
 .sideBar button:hover {
     font-size: 35px;
     border-bottom: 1px solid antiquewhite;
+    transition: all .6s ease;
 }
 
 .sideBar:hover {
@@ -87,4 +88,36 @@ a {
 .content:nth-child(2):hover .texto{
     visibility: visible;
     background: rgba(0, 0, 0, 0.9);
+}
+
+.indie input{
+    opacity: 0;
+    
+}
+
+label{
+    display:flex ;
+    cursor: pointer;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin: auto;
+    justify-content: end;
+    padding-right: 1rem;
+}
+
+label:hover{
+    font-size: 35px;
+    border-bottom: 1px solid antiquewhite;
+    transition: all .6s ease;
+
+}
+
+
+html {
+    scroll-behavior: smooth;
+  }
+
+#g{
+    text-align: center;
+    display: flex;
+    justify-content: center;
 }
