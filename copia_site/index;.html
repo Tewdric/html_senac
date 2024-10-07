@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My gaming site</title>
+    <link rel="stylesheet" href="./css/style.css">
+
+</head>
+
+<body>
+    <section class="montanhas">
+        <div class="titulo">
+            <h1>Paralax Test</h1>
+        </div>
+
+    </section>
+
+    <div class="conteudo" id="cont">
+        <h1>Personagens</h1>
+
+        <div class="foto_conteudo">
+            <div class="itens">
+                <div class="card toad" style="--delay: 1s" >
+
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHyv2URxKK_-UDxrIh9oEt2QPx5oj7Y00DeT5xaqXIs1Kdg2cuBvTlLNI1Py5DxZFnh7I&usqp=CAU"
+                        alt="">
+
+                    <div class="texto">
+                        <h1>Toad</h1>
+                        <p>Todo mundo que ir pro Céu, mas ninguém quer morrer!</p>
+                        <button id="toad" onclick="mudar('toad')">Game
+                            <img src="https://media.tenor.com/qtkEvYZXUowAAAAM/punching-air-toad.gif" alt="">
+                        </button>
+                    </div>
+                </div>
+                <div class="card" style="--delay: 2.5s">
+                    <img src="https://sourcegaming.info/wp-content/uploads/2018/04/The-case-for-Dovahkin.jpg" alt="">
+
+                    <div class="texto">
+                        <h1>Dovahkiin</h1>
+                        <p> Dovahkiin, aquele com alma de dragão...</p>
+                        <button id="skyrim" onclick="mudar('skyrim')">Game
+                            <img src="https://media.tenor.com/y6_NBi-9ZLQAAAAM/skyrim-margin.gif" alt="">
+                        </button>
+                    </div>
+                </div>
+                <div class="card" style="--delay: 4s">
+                    <img src="https://http2.mlstatic.com/D_NQ_NP_810647-MLB42808104113_072020-O.webp" alt="">
+
+                    <div class="texto">
+                        <h1>Arthur Morgan</h1>
+                        <i>"I gave you all I had."</i>
+                        <br>
+                        <button id="arthur" onclick="mudar('red')">Game
+                            <img src="https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExeTh4NGwwaHQ0aGF5Z3RmZnBvamNsOHltaTI2cHB5a3NrcG1oNnU2dSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/fjxbfQKLcKzAJIqSuD/giphy.webp" alt="">
+                        </button>
+                    </div>
+                </div>
+                <div class="card" style="--delay: 5.5s">
+                    <img src="https://gameforfun.com.br/wp-content/uploads/2018/11/Dantes-Inferno-Curta-Tal-Peleg.jpg"
+                        alt="">
+
+                    <div class="texto">
+                        <h1>Dante</h1>
+                        <i>"Não deixarei que meus pecados condenem aqueles que me são queridos!" </i>
+                        <br>
+                        <button id="dante" onclick="mudar('dante')">Game
+                            <img src="https://media.tenor.com/CBUib1L1kGoAAAAM/dsx1.gif" alt="">
+                        </button>
+                    </div>
+                </div>
+                <div class="card" style="--delay: 7s">
+                    <img src="https://wp.inews.co.uk/wp-content/uploads/2016/09/Crash-Bandicoot1.jpg?resize=600,360&strip=all&quality=90"
+                        alt="">
+
+                    <div class="texto">
+                        <h1>Crash Bandicoot</h1>
+                        <i>"Let's go!" </i><br>
+                        <button id="crash" onclick="mudar('crash')">Game
+                            <img src="https://j.gifs.com/vqJMBV.gif" alt="">
+                        </button>
+                    </div>
+                </div>
+                <div class="card" style="--delay: 8.5s">
+                    <img src="https://live.staticflickr.com/3064/2342273838_2f4ce3282a_c.jpg"
+                        alt="">
+
+                    <div class="texto">
+                        <h1>Super Smash Bros</h1>
+                        <i>Dedo no cu e gritaria.</i><br>
+                        <button id="smash" onclick="mudar('smash')">Game
+                            <img src="https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExamQ5dzd0ajVraGVpOGk1d2o1NDZqeWI4ZHdqNzRscmwzcWFhcHEzcCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/28hH1I85TCZosy5zus/giphy.webp" alt="">
+                        </button>
+                    </div>
+
+                    
+                </div>
+            </div>
+        </div>
+
+
+
+    </div>
+
+    <script>
+        function mudar(img){
+            const conteudo = document.getElementById('cont')
+
+            if(img === 'toad'){
+                conteudo.style.backgroundImage="url(https://c.wallhere.com/photos/6f/de/Toad_character_leaves_toys_Super_Mario_video_games-229496.jpg!d)"; 
+                conteudo.style.backgroundRepeat="no-repeat";
+                conteudo.style.backgroundPosition="center";
+                conteudo.style.backgroundSize="cover";
+                conteudo.style.transition=".8s"
+            }
+            else if(img ==='skyrim'){
+                conteudo.style.backgroundImage="url(https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/cc7a3659-6af0-4b36-9c2d-485d939fc813/d4xnl5z-16a4e547-cc9f-4973-90eb-429b807502af.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2NjN2EzNjU5LTZhZjAtNGIzNi05YzJkLTQ4NWQ5MzlmYzgxM1wvZDR4bmw1ei0xNmE0ZTU0Ny1jYzlmLTQ5NzMtOTBlYi00MjliODA3NTAyYWYuanBnIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.4z27WaSck7VeWsFcn_mHzt4hzkslv4vj04Cz05fPsbI)"; 
+                conteudo.style.backgroundRepeat="no-repeat";
+                conteudo.style.backgroundPosition="center";
+                conteudo.style.backgroundSize="cover";
+                conteudo.style.transition=".8s"
+            }
+            else if(img ==='red'){
+                conteudo.style.backgroundImage="url(https://wallpapercat.com/w/full/2/6/4/656-3840x2160-desktop-4k-red-dead-redemption-background.jpg)"; 
+                conteudo.style.backgroundRepeat="no-repeat";
+                conteudo.style.backgroundPosition="center";
+                conteudo.style.backgroundSize="cover";
+                conteudo.style.transition=".8s"
+            }
+            else if(img ==='dante'){
+                conteudo.style.backgroundImage="url(https://images4.alphacoders.com/180/180348.jpg)"; 
+                conteudo.style.backgroundRepeat="no-repeat";
+                conteudo.style.backgroundPosition="center";
+                conteudo.style.backgroundSize="cover";
+                conteudo.style.transition=".8s"
+            }
+            else if(img ==='crash'){
+                conteudo.style.backgroundImage="url(https://t2.tudocdn.net/618974?w=1920&h=1440)"; 
+                conteudo.style.backgroundRepeat="no-repeat";
+                conteudo.style.backgroundPosition="center";
+                conteudo.style.backgroundSize="cover";
+                conteudo.style.transition=".8s"
+            }
+            else if(img ==='smash'){
+                conteudo.style.backgroundImage="url(https://images2.alphacoders.com/927/thumb-1920-927337.png)"; 
+                conteudo.style.backgroundRepeat="no-repeat";
+                conteudo.style.backgroundPosition="center";
+                conteudo.style.backgroundSize="cover";
+            }
+        }
+    
+
+    </script>
+
+</body>
+
+</html>
