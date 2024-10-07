@@ -98,6 +98,10 @@ section{
     cursor: pointer;
 }
 
+.itens:hover .linha{
+    animation-play-state: paused;
+}
+
 @keyframes correndo{
     from{
         right: -500px;
@@ -226,8 +230,111 @@ button img{
 
 .linha{
     margin-top: 1rem;
+    border: 1px solid white;
     width: 0%;
-
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    margin-top: 2rem;
     animation: progresso 10s linear infinite;
+    transition: .6s;
+}
+
+@keyframes progresso{
+    0%{
+        width: 0%;
+        transition: .6s;
+        border: 1px solid red;
+    }
+    33%{
+        width: 33%;
+        transition: .6s;
+        border: 1px solid yellow;
+    }
+    66%{
+        width: 66%;
+        transition: .6s;
+        border: 1px solid greenyellow;
+    }
+    100%{
+        width: 100%;
+        transition: .6s;
+        border: 1px solid green;
+    }
+}
+
+article{
+    display: flex;
+    text-align: justify;
+    gap: 20px;
+}
+
+article p{
+    width: 60%;
+}
+.foto_artigo{
+    width: 40%;
+    animation: trocando 10s linear infinite;
+}  
+
+@keyframes trocando{
+    0%{
+        background-image: url(https://i.pinimg.com/736x/d2/33/a4/d233a42eb8ab9c98d82bb019d230b354.jpg);
+        background-position: center;
+        background-size: cover;
+    
+    }
+    50%{
+        background-image: url(https://img.elo7.com.br/product/zoom/1E3BB82/big-poster-do-filme-deadpool-tamanho-90x-0-cm-loot-op-003-decoracao-geek.jpg);
+        background-position: center;
+        background-size: cover;
+    
+    }
+    100%{
+        background-image: url(https://i.ebayimg.com/thumbs/images/g/WBwAAOSwLMlm96V1/s-l1200.jpg);
+        background-position: center;
+        background-size: cover;
+    
+    }
+}
+
+li{
+    list-style:decimal;
+    padding: 0 20px 10px 20px;
+
+    text-align: justify;
+}
+
+summary{
+    width: 00%;
+    transition: 2s;
+}
+summary:hover{
+    width: 20%;
+    border-bottom: 1px solid white;
+    transition: 2s;
+    cursor: pointer;
+}
+
+.filme{
+    display: flex;
+    text-align: justify;
+}
+
+.filme img{
+    align-items: center;
+    width: 100%;
+    height: 70%;
+    background-repeat: none;
+    -webkit-mask-image: url(../—Pngtree—holi\ colors\ splash\ vector_9059184.png);
+    mask-image: url(../—Pngtree—holi\ colors\ splash\ vector_9059184.png);
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    -webkit-mask-size: cover;
+    mask-size: cover;
+    -webkit-mask-position: center;
+    mask-position: center;
+    background-color: rgb(80, 132, 168);
+   
 }
 
