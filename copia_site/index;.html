@@ -142,8 +142,30 @@
             <img src="https://gfx.videobuster.de/archive/v/cLqwhN3sflbrbU0Fp9CLbWgcz0lMkawsiUyRjAzJTJGaW1hmSUyRmpwZWclMkb0YWVjZDBlZTllZmXb6jZjuemxx2S-2S5qcGcmcj1opjAw/paranorman-cover.jpg" alt="">
         </section>
     </div>
+    <div class="conteudo aloy">
+
+        <div class="teste1">
+            
+            <div class="icons-tt">
+                <article id="person">
+                    <h2>Apenas teste</h2><br>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eos aut atque tempore corrupti error hic facere laudantium sit autem tempora nam consequuntur, aliquam omnis dolores officiis! Illo aspernatur cupiditate sit!</p>
+                </article>
+               <div class="icones">
+                <img id="aloy" onclick="testando('aloy')" value="aloy" src="https://assetsio.gnwcdn.com/so-stark-entwickelt-sich-aloy-in-horizon-forbidden-west-weiter-ohne-model-look-1642442932695.jpg?width=1200&height=1200&fit=crop&quality=100&format=png&enable=upscale&auto=webp" alt="">
+                <img id="aloy" onclick="testando('iron')" value="aloy" src="https://www.comboinfinito.com.br/principal/wp-content/uploads/2019/03/Iron-Man-VR.jpg" alt="">
+            
+               </div>
+            </div>
+            <div class="testando" id="testando"> 
+                
+            </div>
+           
+        </div>
+    </div>
     <script>
         function mudar(img){
+
             const conteudo = document.getElementById('cont')
 
             if(img === 'toad'){
@@ -186,6 +208,34 @@
                 conteudo.style.backgroundRepeat="no-repeat";
                 conteudo.style.backgroundPosition="center";
                 conteudo.style.backgroundSize="cover";
+            }
+        }
+   
+        function testando(chibi){
+            const icon = document.getElementById('testando')
+            const art = document.getElementById('person')
+            if(chibi =='aloy'){
+                icon.style.transition="2s linear";
+                art.style.transition="2s linear";
+                document.getElementById('person').innerHTML =`            <h2>Aloy</h2><br>
+            <p>Aloy é a protagonista do jogo Horizon Zero Dawn e sua sequência Horizon Forbidden West, ambos desenvolvidos pela Guerrilla Games. Ela é uma guerreira forte e determinada, vivendo em um mundo pós-apocalíptico dominado por máquinas. O arco de Aloy é caracterizado por sua busca por respostas sobre suas origens e o passado de seu mundo, enquanto enfrenta desafios para proteger as tribos humanas e descobrir a verdade sobre uma antiga civilização.
+<br>
+Com uma forte habilidade de liderança, inteligência estratégica e um senso de justiça, Aloy se destaca tanto como combatente quanto como solucionadora de mistérios. Ela também possui uma personalidade empática, embora muitas vezes seja reservada e independente.</p>`
+                document.getElementById('testando').innerHTML = '<img src="./img/aloy_png.png" alt="">';
+            }
+            else if(chibi ==='iron'){
+                icon.style.transition="2s linear";
+                art.style.transition="2s linear";
+                document.getElementById('person').innerHTML =`            <h2>Homem de Ferro</h2><br>
+            <p>O Homem de Ferro (Iron Man), cujo nome verdadeiro é Tony Stark, é um dos personagens mais icônicos da Marvel Comics e parte fundamental do Universo Cinematográfico da Marvel (MCU). Criado por Stan Lee, Larry Lieber, Don Heck e Jack Kirby, ele fez sua primeira aparição nos quadrinhos em 1963.<br>
+                
+Tony Stark é um gênio, bilionário, playboy e filantropo. Depois de ser gravemente ferido e sequestrado por terroristas, ele constrói uma armadura tecnológica para escapar e, eventualmente, aprimora esse traje para se tornar o super-herói conhecido como Homem de Ferro. Sua história é marcada por sua luta interna entre ser um empresário egoísta e aprender a usar sua inteligência e poder para o bem maior.
+<br>
+O traje do Homem de Ferro, que é uma de suas criações mais notáveis, é uma armadura altamente tecnológica, com inúmeras versões ao longo dos anos, cada uma com melhorias, incluindo habilidades de voo, armas poderosas, e um avançado sistema de inteligência artificial chamado J.A.R.V.I.S., que o auxilia em combate.
+<br>
+No MCU, ele é interpretado por Robert Downey Jr. e se torna um dos líderes dos Vingadores, com destaque nos filmes Homem de Ferro, Vingadores, Guerra Civil e Ultimato. A história de Tony Stark também envolve uma jornada emocional, desde sua arrogância inicial até o sacrifício altruísta para salvar a humanidade em Vingadores: Ultimato.</p>`
+                document.getElementById('testando').innerHTML = '<img src="./img/ferro.png" alt="">';
+
             }
         }
     </script>
