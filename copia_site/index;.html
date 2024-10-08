@@ -215,8 +215,10 @@
             const icon = document.getElementById('testando')
             const art = document.getElementById('person')
             if(chibi =='aloy'){
-                icon.style.transition="2s linear";
-                art.style.transition="2s linear";
+                icon.style.transition="2s linear left";
+                icon.style.transformOrigin="bottom 2s"
+                art.style.transformOrigin="bottom 2s"
+                art.style.transition="2s linear left";
                 document.getElementById('person').innerHTML =`            <h2>Aloy</h2><br>
             <p>Aloy é a protagonista do jogo Horizon Zero Dawn e sua sequência Horizon Forbidden West, ambos desenvolvidos pela Guerrilla Games. Ela é uma guerreira forte e determinada, vivendo em um mundo pós-apocalíptico dominado por máquinas. O arco de Aloy é caracterizado por sua busca por respostas sobre suas origens e o passado de seu mundo, enquanto enfrenta desafios para proteger as tribos humanas e descobrir a verdade sobre uma antiga civilização.
 <br>

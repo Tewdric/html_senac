@@ -266,14 +266,18 @@ button img{
 article{
     display: flex;
     text-align: justify;
+    gap: 10px;
 
 }
 
 article p{
     width: 60%;
+    
 }
+
 .foto_artigo{
     width: 40%;
+    height: 100vh;
     animation: trocando 10s linear infinite;
 }  
 
@@ -319,22 +323,14 @@ summary:hover{
 .filme{
     display: flex;
     text-align: justify;
+    gap: 10px;
 }
 
 .filme img{
     align-items: center;
     width: 100%;
-    height: 70%;
-    background-repeat: none;
-    -webkit-mask-image: url(../—Pngtree—holi\ colors\ splash\ vector_9059184.png);
-    mask-image: url(../—Pngtree—holi\ colors\ splash\ vector_9059184.png);
-    -webkit-mask-repeat: no-repeat;
-    mask-repeat: no-repeat;
-    -webkit-mask-size: cover;
-    mask-size: cover;
-    -webkit-mask-position: center;
-    mask-position: center;
-    background-color: rgb(80, 132, 168);
+    height: 100%;
+ 
    
 }
 
@@ -347,6 +343,10 @@ summary:hover{
     align-items: center;
     justify-content: center;
     padding: 1rem;
+    animation: ease;
+    transition: all 2s left;
+    transform-origin: bottom;
+
 }
 
 #person{
@@ -354,8 +354,9 @@ summary:hover{
     height: 60%;
     text-align: justify;
     padding: 20px;
+    animation: ease;
     transition: all 2s;
-
+    
     flex-direction: column;
 }
 
@@ -384,12 +385,16 @@ summary:hover{
 .icons-tt{
     width: 50%;
     height: 100vh;
-
+    animation: ease;
+    transition: all 2s;
+    transform-origin: bottom;
+    
     display: flex;
     flex-direction: column;
     gap: 20px;
     justify-content: center;
     position: relative;
+
 }
 
 .icons-tt img{
@@ -397,6 +402,9 @@ summary:hover{
     height: 100px;
     border-radius: 50%;
     transition: .6s;
+    animation: ease;
+    transition: all 2s;
+    
 }
 
 .icones{
@@ -418,7 +426,9 @@ summary:hover{
     height: 100vh;
     justify-content: center;
     align-items: center;
-    transition: all .6s;
+    animation: ease;
+    transition: all 2s;
+    transform-origin: bottom;
 
 }
 
@@ -426,6 +436,7 @@ summary:hover{
     width: 90%;
     height: 90%;
     object-fit:fill;
+   
     transition: 1s;
     animation: up 3s linear infinite;
 }
