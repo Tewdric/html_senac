@@ -148,16 +148,20 @@
             
             <div class="icons-tt">
                 <article id="person">
-                    <h2>Apenas teste</h2><br>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eos aut atque tempore corrupti error hic facere laudantium sit autem tempora nam consequuntur, aliquam omnis dolores officiis! Illo aspernatur cupiditate sit!</p>
+                    <h2>Coragem - O Cão Covarde</h2><br>
+                    <p>Coragem, o Cão Covarde ("Courage the Cowardly Dog") é uma série animada que foi ao ar entre 1999 e 2002 no Cartoon Network. A trama gira em torno de um cão rosa chamado Coragem, que vive com seus donos, Muriel e Eustácio, em uma casa isolada no meio de um deserto. Apesar de ser extremamente medroso, Coragem constantemente enfrenta criaturas e seres sobrenaturais para proteger sua família, especialmente Muriel, a quem ele ama muito.
+
+                        A série é conhecida por seu humor sombrio, histórias de suspense e estilo de animação único, que mistura elementos de horror e comédia. O contraste entre o nome do personagem e suas atitudes (Coragem é covarde, mas acaba sendo corajoso quando necessário) é um dos aspectos centrais da série.</p>
                 </article>
                <div class="icones">
+                <img id="coragem" onclick="testando('coragem')" src="https://c.wallhere.com/photos/e9/ef/Courage_the_Cowardly_Dog_Cartoon_Network_cartoon_dog-243923.jpg!s1" alt="">
                 <img id="aloy" onclick="testando('aloy')" value="aloy" src="https://assetsio.gnwcdn.com/so-stark-entwickelt-sich-aloy-in-horizon-forbidden-west-weiter-ohne-model-look-1642442932695.jpg?width=1200&height=1200&fit=crop&quality=100&format=png&enable=upscale&auto=webp" alt="">
                 <img id="aloy" onclick="testando('iron')" value="aloy" src="https://www.comboinfinito.com.br/principal/wp-content/uploads/2019/03/Iron-Man-VR.jpg" alt="">
             
                </div>
             </div>
             <div class="testando" id="testando"> 
+                <img src="./img/coragem.png" alt="">
                 
             </div>
            
@@ -214,11 +218,9 @@
         function testando(chibi){
             const icon = document.getElementById('testando')
             const art = document.getElementById('person')
+
             if(chibi =='aloy'){
-                icon.style.transition="2s linear left";
-                icon.style.transformOrigin="bottom 2s"
-                art.style.transformOrigin="bottom 2s"
-                art.style.transition="2s linear left";
+
                 document.getElementById('person').innerHTML =`            <h2>Aloy</h2><br>
             <p>Aloy é a protagonista do jogo Horizon Zero Dawn e sua sequência Horizon Forbidden West, ambos desenvolvidos pela Guerrilla Games. Ela é uma guerreira forte e determinada, vivendo em um mundo pós-apocalíptico dominado por máquinas. O arco de Aloy é caracterizado por sua busca por respostas sobre suas origens e o passado de seu mundo, enquanto enfrenta desafios para proteger as tribos humanas e descobrir a verdade sobre uma antiga civilização.
 <br>
@@ -226,8 +228,7 @@ Com uma forte habilidade de liderança, inteligência estratégica e um senso de
                 document.getElementById('testando').innerHTML = '<img src="./img/aloy_png.png" alt="">';
             }
             else if(chibi ==='iron'){
-                icon.style.transition="2s linear";
-                art.style.transition="2s linear";
+
                 document.getElementById('person').innerHTML =`            <h2>Homem de Ferro</h2><br>
             <p>O Homem de Ferro (Iron Man), cujo nome verdadeiro é Tony Stark, é um dos personagens mais icônicos da Marvel Comics e parte fundamental do Universo Cinematográfico da Marvel (MCU). Criado por Stan Lee, Larry Lieber, Don Heck e Jack Kirby, ele fez sua primeira aparição nos quadrinhos em 1963.<br>
                 
@@ -237,6 +238,19 @@ O traje do Homem de Ferro, que é uma de suas criações mais notáveis, é uma 
 <br>
 No MCU, ele é interpretado por Robert Downey Jr. e se torna um dos líderes dos Vingadores, com destaque nos filmes Homem de Ferro, Vingadores, Guerra Civil e Ultimato. A história de Tony Stark também envolve uma jornada emocional, desde sua arrogância inicial até o sacrifício altruísta para salvar a humanidade em Vingadores: Ultimato.</p>`
                 document.getElementById('testando').innerHTML = '<img src="./img/ferro.png" alt="">';
+                
+            }
+            else if(chibi ==='coragem'){
+
+                document.getElementById('person').innerHTML =
+                `<h2>Coragem - O Cão Covarde</h2><br>
+                    <p>Coragem, o Cão Covarde ("Courage the Cowardly Dog") é uma série animada que foi ao ar entre 1999 e 2002 no Cartoon Network. A trama gira em torno de um cão rosa chamado Coragem, que vive com seus donos, Muriel e Eustácio, em uma casa isolada no meio de um deserto. Apesar de ser extremamente medroso, Coragem constantemente enfrenta criaturas e seres sobrenaturais para proteger sua família, especialmente Muriel, a quem ele ama muito.
+
+                        A série é conhecida por seu humor sombrio, histórias de suspense e estilo de animação único, que mistura elementos de horror e comédia. O contraste entre o nome do personagem e suas atitudes (Coragem é covarde, mas acaba sendo corajoso quando necessário) é um dos aspectos centrais da série.</p>
+                
+                
+                `
+                document.getElementById('testando').innerHTML = '<img src="./img/coragem.png" alt="">';
 
             }
         }

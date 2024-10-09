@@ -138,6 +138,7 @@ section{
     transition: .6s;
     animation: correndo 10s linear infinite;
     animation-delay: var(--delay);
+
     
 }
 
@@ -279,6 +280,8 @@ article p{
     width: 40%;
     height: 100vh;
     animation: trocando 10s linear infinite;
+
+
 }  
 
 @keyframes trocando{
@@ -286,18 +289,24 @@ article p{
         background-image: url(https://i.pinimg.com/736x/d2/33/a4/d233a42eb8ab9c98d82bb019d230b354.jpg);
         background-position: center;
         background-size: cover;
+        background-repeat: no-repeat;
+        object-fit: fill;
     
     }
     50%{
         background-image: url(https://img.elo7.com.br/product/zoom/1E3BB82/big-poster-do-filme-deadpool-tamanho-90x-0-cm-loot-op-003-decoracao-geek.jpg);
         background-position: center;
         background-size: cover;
+        background-repeat: no-repeat;
+        object-fit: fill;
     
     }
     100%{
         background-image: url(https://i.ebayimg.com/thumbs/images/g/WBwAAOSwLMlm96V1/s-l1200.jpg);
         background-position: center;
         background-size: cover;
+        background-repeat: no-repeat;
+        object-fit: fill;
     
     }
 }
@@ -330,8 +339,7 @@ summary:hover{
     align-items: center;
     width: 100%;
     height: 100%;
- 
-   
+
 }
 
 .teste1{
@@ -339,34 +347,32 @@ summary:hover{
     flex-direction: row;
     width: 100%;
     height: 100vh;
-
     align-items: center;
     justify-content: center;
     padding: 1rem;
-    animation: ease;
-    transition: all 2s left;
-    transform-origin: bottom;
+
 
 }
+
+
 
 #person{
     width: 100%;
     height: 60%;
     text-align: justify;
     padding: 20px;
-    animation: ease;
-    transition: all 2s;
-    
+
     flex-direction: column;
 }
 
 #person h2{
     font-size: 3em;
+
     font-family: "Qwitcher Grypen", cursive;
 }
 #person p{
     width: 100%;
-
+    transition: all 2s;
     overflow: auto;
     padding: 1rem;
 }
@@ -379,15 +385,11 @@ summary:hover{
 #person p::-webkit-scrollbar-thumb{
     background: white;
     cursor: pointer;
-
 }
 
 .icons-tt{
     width: 50%;
     height: 100vh;
-    animation: ease;
-    transition: all 2s;
-    transform-origin: bottom;
     
     display: flex;
     flex-direction: column;
@@ -402,8 +404,6 @@ summary:hover{
     height: 100px;
     border-radius: 50%;
     transition: .6s;
-    animation: ease;
-    transition: all 2s;
     
 }
 
@@ -413,11 +413,11 @@ summary:hover{
 
 .icons-tt img:hover{
   filter: drop-shadow( 0 0 10px goldenrod);
-  transform:rotateZ(360deg);
+  transform:rotateY(360deg);
   cursor: pointer;
   width: 120px;
   height: 120px;
-  transition: 1s;
+  transition: 2s;
 }
 
 .testando{
@@ -429,27 +429,36 @@ summary:hover{
     animation: ease;
     transition: all 2s;
     transform-origin: bottom;
+    position: relative;
+    overflow: hidden;
 
 }
 
 .testando img{
-    width: 90%;
-    height: 90%;
+    width: 100%;
+    height: 100%;
     object-fit:fill;
    
     transition: 1s;
-    animation: up 3s linear infinite;
+    animation: up 1s ease-out;
+    position: absolute;
 }
 
 @keyframes up{
-    0%,100%{
-        width: 90%;
-        height: 90%;
-        transition: 1s;
-    }
-    50%{
-        width: 100%;
-        height: 100%;
-        transition: 1s;
-    }
+   0%{
+        top: -500px;
+        left: 500px;
+        opacity: 0;
+        width: 10%;
+        height: 10%;
+        
+   }
+   100%{
+
+    opacity: 1;
+    width: 100%;
+    height: 100%;
+   }
+
 }
+
