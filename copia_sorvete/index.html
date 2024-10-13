@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorvetes</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body id="fundo">
+    <nav >
+        <h3><a href=""></a></h3>
+        <ul>
+            <a href="">Home</a>
+            <a href="">Contato</a>
+            <a href="">Sobre</a>
+        </ul>
+    </nav>
+    <div class="slideShow" >
+        <div class="caixa_esquerda" id="esquerdinha">
+            <div class="texto">
+                <h1>Ice Cream</h1>
+
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et eos illum, consectetur molestiae labore asperiores eligendi explicabo aperiam rerum doloribus reprehenderit enim modi illo? Voluptate cumque non aut excepturi natus.</p>
+            </div>
+            <div class="controls">
+            
+                <a href="#" data-index="1" class="testando" onclick="mudar('purple')">
+                    <img src="./img/acai.png">
+                </a>
+                <a href="#" data-index="2">
+                    <img src="./img/banana.png"onclick="mudar('yellow')">
+                </a>
+                <a href="#" data-index="3" onclick="mudar('blue')">
+                    <img src="./img/blueberry.png">
+                </a>
+                <a href="#" data-index="4"onclick="mudar('green')">
+                    <img src="./img/verdin.png">
+                </a>
+            </div>
+        </div>
+
+        <div class="caida_direita">
+            <div class="carrossel"  id="conteudo">
+                <div class="slide " >
+                    <img src="./img/acai.png" >
+                </div>
+                <div class="slide active" >
+                    <img src="./img/banana.png" >
+                </div>
+                <div class="slide" >
+                    <img src="./img/blueberry.png" >
+                </div>
+                <div class="slide">
+                    <img src="./img/verdin.png" >
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+    <script src="app.js" defer></script>
+</body>
+</html>

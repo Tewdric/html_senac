@@ -1,0 +1,207 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: cursive;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    z-index: 1;
+    align-items: center;
+    font-size: 20px;
+    padding: 0 2rem;
+    font-weight: 400;
+    position: sticky;
+   
+    animation: passando s linear infinite;
+    background-color: transparent;
+
+}
+
+
+a{
+
+    color: aliceblue;
+    text-decoration: none;
+    text-shadow: 0 0px 3px black;
+    border-bottom: 2px solid transparent;
+    transition: .6s;
+}
+
+ul a:hover{
+    border-bottom: 2px solid  aliceblue;;
+    transition: .6s;
+}
+ul{
+    display: flex;
+    gap: 3rem;
+}
+
+ul a{
+    color: aliceblue;
+    text-shadow: 0 0px 3px black;
+    text-decoration: none;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(231, 231, 120);
+    overflow: hidden;
+    text-shadow: 0 3px 5px black;
+}
+
+
+html{
+    font-size: 62.5%;
+}
+
+.slideShow{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.caixa_esquerda{
+
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: -10%;
+    height: 80vh;
+    justify-content: center;
+    align-items: start;
+    z-index: 0;
+    text-align: start;
+    color: white;
+    background-color:rgb(235, 235, 67) ;
+    border-radius: 83% 17% 90% 10% / 6% 34% 66% 94%;
+}
+
+h1{
+    font-size: 7em;
+    padding: 2rem;
+}
+ 
+
+p{
+    width: 100%;
+    height: 100%;
+    font-size: 2em;
+    text-align: justify;
+    padding: 2rem;
+}
+.caida_direita{
+    width: 50%;
+    height: 100vh;
+    overflow:hidden;
+    display: flex;
+    justify-content: end;
+    position: relative;
+    align-items: center;
+}
+
+.carrossel{
+    width: 50rem;
+    height: 50rem;
+    border: 7rem solid rgb(235, 235, 67) ;
+    background-color:rgb(235, 235, 67)  ;   
+
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    right: -30%;
+    transition: rotate 1s;
+}
+.slide{
+    width: 20rem;
+    position: absolute;
+    transition: transform .5s;
+}
+
+.slide:nth-child(1){
+    bottom: -20rem;
+}
+.slide:nth-child(2){
+    left: -20rem;
+    transition: transform 0.5s;
+}
+.slide:nth-child(3){
+    top: -20rem;
+    
+}
+.slide:nth-child(4){
+    right: -20rem;
+    
+}
+
+.active{
+    transform: scale(2.5);
+    transition: transform .5s;
+}
+
+.slide img{
+    width: 100%;
+    object-fit: cover;
+    transition: transform .5s;
+}
+
+.controls{
+
+    bottom: 5rem;
+    gap: 20px;
+    width: 100%;
+    display: flex;
+
+}
+
+
+
+.controls a{
+    width: 100%;
+    height: 100%;
+    padding: 1rem;
+    display: inline-block;
+    cursor: pointer;
+    border-radius: 100%;
+    transition: background-color .2s;
+
+   
+    
+}
+
+@keyframes movendo{
+    0%,100%{
+        transform: rotateZ(-10deg);
+        width: 100%;
+        height: 100%;
+        transition: 1s ease;
+
+    }
+    50%{
+        transform: rotateZ(10deg);
+        transition: 1s ease;
+
+    }
+}
+
+.controls a:hover{
+    filter: drop-shadow( 0 0 5px brown);
+    animation: movendo  1s linear infinite;
+
+}
+
+
+.controls img{
+    width: 100%;
+    position: sticky;
+}
