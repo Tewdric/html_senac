@@ -413,11 +413,11 @@ summary:hover{
 
 .icons-tt img:hover{
   filter: drop-shadow( 0 0 10px goldenrod);
-  transform:rotateY(360deg);
+  transform:rotateZ(360deg);
   cursor: pointer;
   width: 120px;
   height: 120px;
-  transition: 2s;
+  transition: 1.5s;
 }
 
 .testando{
