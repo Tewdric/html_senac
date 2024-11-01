@@ -7,10 +7,11 @@ adicionar.addEventListener('click',adicionarTarefa)
 
 function adicionarTarefa(){
 
-    var teste = valor.value
+    const teste = valor.value
+    const aviso = document.getElementById('aviso')
 
     if(teste !==""){
-
+        
         var nova_tarefa = document.createElement('li')
         nova_tarefa.innerHTML=`${teste} 
         <button class="excluir">Excluir</button>
@@ -19,7 +20,17 @@ function adicionarTarefa(){
 
         nova_tarefa.style.fontSize="30px"
         lista.appendChild(nova_tarefa)
+        localStorage.setItem('teste',lista)
+        console.log(nova_tarefa)
         valor.value=""
+
+        aviso.innerHTML=''
+        
+    }else{
+        
+        aviso.innerHTML='O campo não foi preenchido!'
+        aviso.style.color='red'
+        
     }
 }
 
@@ -34,3 +45,4 @@ lista.addEventListener('click',function(e){
         e.target.parentElement.style.color='red'
     }
 })
+
