@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <input type="text" name="" id="a">
+    <button onclick="txt(this)">teste</button>
+
+    <button onclick="texto('YES! ')">YES!</button>
+    <button onclick="texto('NO! ')">NO!</button>
+    <button onclick="texto('WE CAN! ')">WE CAN!</button>
+
+    <ul>
+
+    </ul>
+
+    <script>
+        function txt(referencia){
+            const valor = document.getElementById('a').value
+            console.log(valor)
+        }
+
+        function texto(texto){
+            const listaTask = document.querySelector('ul')
+            const lista = document.createElement('li')
+
+            lista.innerHTML = texto
+
+            listaTask.appendChild(lista)
+            console.log(lista)
+        }
+    </script>
+</body>
+</html>

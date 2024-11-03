@@ -4,6 +4,7 @@ const adicionar = document.querySelector("#add")
 const lista = document.querySelector("#lista")
 const sair = document.querySelector('#sair')
 const salvando = document.querySelector('#salvar')
+var contador = 0
 
 function salvar(){
     const retorno = localStorage.getItem('listaItens')
@@ -28,20 +29,20 @@ salvando.addEventListener('click',()=>{
 })
 
 adicionar.addEventListener('click',()=>{
-
+    contador ++
     const textoInput = valor.value
     const linha = document.createElement('li')
 
-    linha.innerHTML=`${textoInput}
+    linha.innerHTML=`<li id ="${contador}">${textoInput}
     <button class="excluir">Excluir</button>
     <button class="feito">Feito</button>
-    <button class="nfeito">Não Feito</button>`
+    <button class="nfeito">Não Feito</button></li>`
     lista.appendChild(linha)
 
-    listaItens.push(`<li>${textoInput}
+    listaItens.push(`<li id ="${contador}">${textoInput}
     <button class="excluir">Excluir</button>
     <button class="feito">Feito</button>
-    <button class="nfeito">Não Feito</button>`)
+    <button class="nfeito">Não Feito</button></li>`)
 
     valor.value=""
 })
